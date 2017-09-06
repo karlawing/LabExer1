@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karl.labexer1.secondactivity">
+
+    <TextView
+        android:id="@+id/scoret"
+        android:text="Your Raw Average is:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="247dp"
+        tools:layout_editor_absoluteX="52dp"
+        android:layout_alignBaseline="@+id/score"
+        android:layout_alignBottom="@+id/score"
+        android:layout_alignLeft="@+id/trt"
+        android:layout_alignStart="@+id/trt" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="97dp"
+        tools:layout_editor_absoluteX="256dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tr"
+        android:layout_alignEnd="@+id/tr"
+        android:layout_marginTop="106dp" />
+
+    <TextView
+        android:id="@+id/trt"
+        android:text="Your final grade is:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="132dp"
+        tools:layout_editor_absoluteX="107dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/scoret"
+        android:layout_alignRight="@+id/btnBack"
+        android:layout_alignEnd="@+id/btnBack"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp" />
+
+    <TextView
+        android:id="@+id/tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="131dp"
+        tools:layout_editor_absoluteX="256dp"
+        android:layout_alignBaseline="@+id/trt"
+        android:layout_alignBottom="@+id/trt"
+        android:layout_toRightOf="@+id/btnBack"
+        android:layout_toEndOf="@+id/btnBack" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="Back"
+        tools:layout_editor_absoluteY="310dp"
+        tools:layout_editor_absoluteX="280dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

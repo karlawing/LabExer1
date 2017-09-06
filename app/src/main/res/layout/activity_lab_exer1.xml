@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karl.labexer1.LabExer1">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 1"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintVertical_bias="0.032"
+        android:id="@+id/q1t"
+        android:ems="10"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignBaseline="@+id/q1"
+        android:layout_alignBottom="@+id/q1"
+        android:layout_alignRight="@+id/compute"
+        android:layout_alignEnd="@+id/compute" />
+
+    <EditText
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:hint="Enter Value"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/q2t"
+        android:layout_alignEnd="@+id/q2t" />
+
+        />
+
+    <TextView
+        android:id="@+id/q2t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 2"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/q1"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:hint="Enter Value"
+        android:backgroundTint="@android:color/black"
+        android:layout_alignBaseline="@+id/q2t"
+        android:layout_alignBottom="@+id/q2t"
+        android:layout_alignLeft="@+id/q1"
+        android:layout_alignStart="@+id/q1" />
+
+
+    <TextView
+        android:id="@+id/swt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SW"
+        android:ems="10"
+        android:layout_below="@+id/q2"
+        android:layout_alignLeft="@+id/q2t"
+        android:layout_alignStart="@+id/q2t" />
+
+
+    <EditText
+        android:id="@+id/sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:hint="Enter Value"
+        android:backgroundTint="@android:color/black"
+        android:layout_below="@+id/q2t"
+        android:layout_alignLeft="@+id/q2"
+        android:layout_alignStart="@+id/q2" />
+
+
+
+    <TextView
+        android:id="@+id/labext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Ex"
+        android:layout_below="@+id/sw"
+        android:layout_alignLeft="@+id/swt"
+        android:layout_alignStart="@+id/swt" />
+    <EditText
+        android:id="@+id/labex"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:hint="Enter Value"
+        android:backgroundTint="@android:color/black"
+        android:inputType="number|numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swt"
+        android:layout_alignLeft="@+id/sw"
+        android:layout_alignStart="@+id/sw" />
+    <TextView
+        android:id="@+id/majext"
+        android:text="Major Ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labex"
+        android:layout_toLeftOf="@+id/labex"
+        android:layout_toStartOf="@+id/labex" />
+
+    <EditText
+        android:id="@+id/majex"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:hint="Enter Value"
+        android:backgroundTint="@android:color/black"
+        android:layout_width="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/majext"
+        android:layout_alignBottom="@+id/majext"
+        android:layout_toRightOf="@+id/majext"
+        android:layout_toEndOf="@+id/majext" />
+
+
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:layout_marginTop="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="compute"
+        />
+
+
+
+
+</RelativeLayout>
